@@ -1,0 +1,45 @@
+<!--basically i need to use input to put text, img to put image and p for para and a for links-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="adapt_style.css"> <!--NOTE: i only ision_style.html and no fiel location cause html starts finding fiel location from the base html file folder itslef and idk how to find it form other file yet-->
+        <title>Adapt</title>
+    </head>
+    <body>
+<!--For passowrd im gonna do both enter and button for entering-->
+        <div id="ps">
+            <h3 id="pt">ADAPT</h3>
+            <input id="pi" type="password">
+        </div>
+        <div id="dashboard_screen">
+            <div id="quotes">"The harder it is the faster I'll level up"</div>
+            <h1>ADAPT</h1>
+            <br>
+            <br>
+            <div id="mainmain">
+                <button id="maincat"><i data-lucide="diamond"></i></button>
+                <div id="subhom">
+                    <a href="Vector/vector.html"><button class="index1"><i data-lucide="list-todo"></i></button></a>
+                    <br>
+                    <a href="Journal/journal.html"><button class="index2" ><i data-lucide="notebook-pen"></i></button></a> <!--a is used for links to put the link before closing first a put the href ( which idk what is )-->
+                    <br>
+                    <a href="Knowledge/knowledge.html"><button class="index3" ><i data-lucide="library"></i></button></a>
+                    <div id="knowledgediv">
+                        <div id="kkshape"></div>
+                        <div id="hovercheck"></div>
+                        <a><button class="index3" ><i data-lucide="library"></i></button></a>
+                        <a href="knowledge/QNA/qna.html"><button class="index4"><i data-lucide="circle-question-mark"></i></button></a>
+                        <a href="Knowledge/Coding Logic/codinglogic.html"><button class="index5"><i data-lucide="code-xml"></i></button></a>
+                        <a href="Knowledge/Biology/biology.html"><button class="index6"><i data-lucide="book-copy"></i></button></a>
+                    </div>
+                    <div id="shape"></div>
+                    
+                </div>
+            </div>
+        </div>
+        <script src="https://unpkg.com/lucide@1.31.0/dist/umd/lucide.min.js"></script>
+        <script>lucide.createIcons()</script>
+        <script src="Knowledge/knowvledge_script.js"></script>
+    </body>
+</html>
