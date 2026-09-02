@@ -1,0 +1,74 @@
+Q answer page. I will put the q of the chapter and then ill write answer. i need system where i cna tell if it was right or wrong. if wrong i need a box that will write what i did wrong and save it in wrong section so in future i can filter wrong right and etc. Also i need something where i can write learnt section if i learnt anything in that q, that way i can filter out model qs 
+
+But its liek ill first creat a chapter link when i enter. Then js code should create a new page to whatever link i put then it should be abel to run the code in every NEW page and save diff chapters and everything according to link. 
+
+HOW about i dont create another page but a new division ? but that would look messy THE moment i open page. like u know the passord and dashboard screen come at same time 
+
+ok ig the new page creating is hard. 
+
+ i have 2 options. 
+1. Seperate divisions for each chapter subject
+2. Make  index page and for each q i insert chapter name and subject ( which will be saved later for a dropdown box ), ( ill do the dropdown box as ill put already existing chapters or ask user what al chapters are there and the dropdown will show the chaters and user can selet it ).
+BUT - doing it everytime i tedious...
+
+moreocer just putting subject link for div and when i cli ksubject opens is good but not good for all. i want to later put the filer option too. so what ill do is index page will show the latest qna built of any , and to put that ill ....  create another section of CREATE q where i have already existing links for each chapter or subject. 
+
+But it feels i wont use it much as i need to do caluclation and make diagrams .... it just feels wrong to not do it in nb. 
+
+TBH - i can create a coalculator on the side. 
+
+AI : Im not going in deep or studying hwo o build ai. im gonna make smaller versions myself then go complex . liek to start im not building ai im building resposive system. ill jsut be asking it my site qs liek what habits are remaning and what tasks are not done and it will tell me
+
+
+
+Andrew Hubermen : ( build resillience all the time ) 
+
+A. THINGS T HAT MAKE SOMEONE REALLY DANGERIOUS:( make these idenity )
+1. MORNING CORTISOL SHOULD BE AS HIGH AS POSSIBLE AND NIGHT CORTISOL SHOULD BE AS LOW AS POSSUBLE . People say cortisol is stress hormone ans should be low but thats for evening and night. In MORNING it shoudl be high. it increases artentiveness and focus and overall everything. SCIENCE: noamlly divinde ur WHOLE sleep in 3 parts, si the 3rd part, body NATURALLY increases crotisol, its the CORE fucntion that wakes us up. So when we do that IN MORNING ( anytime u wake up in the 1st hour ), increase cortisol along with ur body. so next day bod yis anticipation of that that cortisol and itself increases more. HOW ? - i ) get sunlightn ( do not DIRECTLY look at sun jsut little diff direction ) + Water ( hydration increases cortisol ) + Caffen + IMPACTFUL is EXERCISE, its the best to increase morning cortisol . NO MOBILE IN MORNING> . Meletonin ( sleep ) and cortisol are opposite. 
+AT NIGHT : lower cotrosiol as mch as possbl.e HOW ? i) Long exales ( when u inhale with vigor it incereases heart rate when u exale and delebialy extent the exale slows heart rate down. 
+when u exale long u are lowering ur contisol making u sleep better. When u are holing break inhabing more ur cotrisol increases
+
+
+ACTION  (TRY MOST> u dont wanna burn extra energy on the neuroticism on getting everything right. u dont need to be perfectioning thatmakes u weak if u dont have sunlight then jsut do others. dont be so NEUROTICISM.  )- 
+-----
+LOWER CORTISOL AT NIGHT - LONG EXALE + hydration increases cortisol so ideally not so much but jsut a little  + dim light ( light hits neurons in eye which indirectly to cercadian clock which inhibits meletonin ). 
+
+HIGH CORTISOL IN MORNING = BRIGHT LIGHT + inahles + hydration + EXERCISE ( very impactful ) 
+
+ideal - BRIGHT LIGHT in morning DIM light in evening. ( thus us very imp liek that guy is legit taking artifical light if he dent have sunlight like lablet light ) 
+-----
+
+HRV:
+When u inhable long ( with vigot ) it speeds ur heart rate up, why ? Cause it diagrapahm moves down, heart becoems more in volume and blood moves little slower in heart and nervoud system sends seignal send heart rate up. When exale long, diagrapahm coems up, heart contract, blood moves fast, so vagus nerve ( which connets brain and heart ) sens signal to heart to slow heart aratw down. THIS IS HRV : Heart rate variability. 
+HIGH HRV IS GOOD - its parasymetatic nercous sstem ( automatic ) hittin breaks on heart rate. 
+HOW HIGH HRV : 5 extended exales during day. doifn this in sleep your hrv will be signinficantly higher. u are teaching ur nervuous system to slow ur heart rate down. ( THE THING I THOUGHT THAT IN STRESS BREAK BIG< ITS NOT BREAK BIG BUT EXALE BIG ), even 3 exales EVEN JUST 1 long before sleep. when u exale long u are lowering ur contisol making u sleep better. When u are holing break inhabing more ur cotrisol increases
+ 
+__________________________________________________________________
+B. WHAT TO DO WHEN NEUROTICISM aND NOTHING PERFECT OR THINGS ARENT GOING UR WAY-
+
+1. U cant spend energy on anxuety and gettign everytihgn perfect. rather than thatm aking u better its jsut taking ur mental energy and making u loser. SO EVEYRIME THERE IS SOMETHIGN IMPERFECT or something NOT OGING UR WAY ASK UR SEFL THIS Q. 
+- AM I GONNA COMPELTLYE RELAX OR AM I GONNA WORK ( NOTHIGN IN BETWEEN not even hybrid ) 
+
+
+
+
+
+
+TODO:
+Create q answer page
+
+When enter a category, the tree should be there
+
+Need to understand creating function and using fucntion alter and naming function
+
+Make your own ai
+
+Make money section
+
+Give new habit button and customize habit with subhabit
+
+add widgits like calander and time
+
+Change workout to morning
+
+reread the podcast notes

@@ -1,5 +1,5 @@
 // pretty heave stuff tmro try thinking everything how it works. and chill u are makign site for ur own enjoyment not so much to think //
-
+console.log(window.innerWidth, window.innerHeight);
 
 let pi = document.getElementById("pi")
 let ps = document.getElementById("ps")
@@ -16,7 +16,30 @@ let kkshape = document.getElementById("kkshape");
 let index5 = document.getElementsByClassName("index5");
 let index6 = document.getElementsByClassName("index6");
 let hovercheck = document.getElementById("hovercheck")
+let timewid = document.getElementById("timewid")
 // variable.value its always shows what value it has in the variable //
+
+let currtime = document.createElement("p");
+// setInterval(
+//     function(){
+//     currtime.id="currtime"
+//     currtime.textContent= new Date().getHours() + " : " + new Date().getMinutes() + " : " + new Date().getSeconds();
+//     timewid.appendChild(currtime)}, 1000);
+// THIS CODE DOES NOT RUN IN FIRST SECOND AS IT THINKS ILL JUST DO IT AFTER 1 second. 
+
+// do run once when start then run the code. 
+
+function time(){
+    currtime.id="currtime"
+    currtime.textContent= new Date().getHours() + " : " + new Date().getMinutes() + " : " + new Date().getSeconds();
+    timewid.appendChild(currtime)
+} // im basically CREATEING a fucntion and giving it NAME as time. ive not run it yet
+
+time() // i ran it // // () tells browswer to RUN the funciton. but above function name(){} there () means DECLATING the name.
+
+setInterval(time,1000)
+
+
 
 mainmain.addEventListener("mouseenter", function(){
     hovercheck.style.display="block"

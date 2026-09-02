@@ -8,7 +8,9 @@ console.log(save)
 let y = 0;
 while (save.length>y){
     let phabitp = document.createElement("p");
-    phabitp.textContent=save[y];
+    phabitp.textContent=save[y] + ": " + new Date().getDate() + " " + new Date().toLocaleString("en-Us", {month:"long"});
     streak.appendChild(phabitp)
     y++
 }
+
+// streakname.textContent=save[y] + ":  " + new Date().getDate() + " " + new Date().toLocaleString("en-US", {month:"long"})

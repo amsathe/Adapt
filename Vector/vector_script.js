@@ -83,7 +83,7 @@ window.addEventListener("load", function(){
                     let scc = document.createElement("script")
                     scc.src="./Progress/progress_script.js";
                     document.body.appendChild(scc);
-                    let save = JSON.parse(localStorage.getItem("save"));
+                    
                     
                 };
                 u++;;

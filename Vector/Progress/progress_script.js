@@ -7,16 +7,20 @@ console.log("progress_script is running")
 // jsut hwne i load it should form that same thing but since progress.html deosnt have it its not running
 // so i jsut need this code to run again just when it loads it shouldnt form AGAIN. 
 
-let streak = document.getElementById("streak");
 
-let save = []
+
+// TO LEARN : i jsut took a easy way out, when i declare a let , its js is refreshed but variable is declared in global scope meaning it deosnt delete. I can use function and declaete valruabel in that funciton but i cant use that variabel outisde maybe i can by getelement by id but that will alos use let....
+
+save = []
 
 
 save = JSON.parse(localStorage.getItem("save")) || []; // BUG - after this save deosnt remain array..( if outside window), if inside window the save isnt being saved and after refesh save array is just []
 // - oh first this is running, this is same problem is buttonstr when removed history. here save is the saved array but itdeonst have any elemnt aved now so the arrya itslef becoems null so later using array is pointless
 
 
-let streakp = JSON.parse(sessionStorage.getItem("clickedp")) || [] // i need to do this cause if i directly jsut open it without clicking there is nothign in clickedp as clickedp only saves when i click and it removes it after progress js runs. So if i havent clicked since i openedthe site and direcftly load progress it will show empty as ther was nothign in streakp
+streakp = JSON.parse(sessionStorage.getItem("clickedp")) || [] // i need to do this cause if i directly jsut open it without clicking there is nothign in clickedp as clickedp only saves when i click and it removes it after progress js runs. So if i havent clicked since i openedthe site and direcftly load progress it will show empty as ther was nothign in streakp
+
+console.log(streakp)
 
 console.log(Array.isArray(save))
 
@@ -26,21 +30,16 @@ if (streakp.length>0){
     save.push(streakp[0]);// since there is only 1 element in the sterakp , im jsut taking the text so there is no nexted array
 }// it also pushes enpty attay element so blank elemnt is also pushed thats why it will only push when length if legnth is greater than
 
-save.splice(0,10);
+console.log(save)
+
+// save.splice(0,10);
 
 
 localStorage.setItem("save", JSON.stringify(save));
 console.log(localStorage.getItem("save"))
 
 
-
-let y = 0;
-while(save.length>y){
-    let streakname = document.createElement("p");
-    streakname.textContent=save[y] + ":  " + new Date().getDate() + " " + new Date().toLocaleString("en-US", {month:"long"})
-    streak.appendChild(streakname);
-    y++;
-}
+console.log(localStorage.getItem("save"))
 
 if (streakp.length>0){
     streakp.splice(0,1);
