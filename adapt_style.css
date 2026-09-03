@@ -20,7 +20,7 @@ a{
     position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
-    top: 350px;
+    top: 380px;
     font-size: 55px;
 }
 
@@ -44,7 +44,7 @@ a{
     position: absolute;
     transform: translate(-50%, -50%);
     left: 50%;
-    top: 50%;
+    top: 53%;
     width: 40%
 }
 
@@ -153,7 +153,7 @@ a{
     transform: translate(0%, +50%);
     bottom: 392px;
     left:50px;
-    transition: left 0.6s;
+    transition: left 0.6s, bottom 0.6s;
     z-index: 1;
 }
 
@@ -273,7 +273,7 @@ a{
 }
 
 .index5 svg{
-    osition: relative;
+    position: relative;
     top: 3px;
 }
 
@@ -335,7 +335,8 @@ a{
     top: 3px;
 }
 
-.index8{
+
+.index9{
     position: fixed;
     display:block;
     border-radius: 100%;
@@ -349,19 +350,47 @@ a{
     bottom: 392px;
     left: 50px;
     transition: left 0.6s, bottom 0.6s;
-    z-index: 0;
+    z-index: 2;
 }
 
-.index8:hover{
+
+
+.index9 svg{
+    position: relative;
+    top: 3px;
+}
+
+.index10{
+    position: fixed;
+    position: fixed;
+    display:block;
+    border-radius: 100%;
+    border-style: solid;
+    border-color: transparent;
+    width: 50px; height: 50px;
+    box-shadow: 10px 8px 8px 0px rgba(0, 0, 0, 0.09), 24px 24px 10px 0px rgba(0,0,0, 0.04), -4px -4px 30px 0px rgba(255,255,255,0.4);
+    background: linear-gradient(to bottom right, #f7f3fa, #e5ddea);
+    color:#7b55e3;
+    transform: translate(0%, +50%);
+    bottom: 392px;
+    left: 50px;
+    transition: left 0.6s, bottom 0.6s;
+    z-index: 1;
+}
+
+.index10:hover{
     border: 2px solid transparent;
     background:linear-gradient(to bottom right, #f7f3fa, #e5ddea) padding-box,
     linear-gradient(to bottom right, #047EF8E6, #AD2BEEE6) border-box;
 }
 
-.index8 svg{
+.index10 svg{
     position: relative;
     top: 3px;
 }
+
+
+
 
 
 #maincat{
@@ -423,6 +452,19 @@ a{
     display: none;
 }
 
+#toolshape{
+    position: fixed;
+    border: 2px solid transparent;
+    height: 220px;
+    width: 130px;
+    border-radius: 100%;
+    bottom: 286px;
+    left:145px;
+    z-index: 0 ;
+    rotate: 0deg;
+    display: none;
+}
+
 #hovercheck{
     position: fixed;
     border: 2px solid transparent;
@@ -443,6 +485,18 @@ a{
     border-radius: 100%;
     bottom: 443px;
     left:115px;
+    z-index: 2 ;
+    display: none;
+}
+
+#toolhovercheck{
+    position: fixed;
+    border: 2px solid transparent;
+    height: 55px;
+    width: 55px;
+    border-radius: 100%;
+    bottom: 363px;
+    left:146px;
     z-index: 2 ;
     display: none;
 }

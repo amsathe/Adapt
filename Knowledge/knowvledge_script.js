@@ -1,5 +1,5 @@
 // pretty heave stuff tmro try thinking everything how it works. and chill u are makign site for ur own enjoyment not so much to think //
-console.log(window.innerWidth, window.innerHeight); 
+
 
 let pi = document.getElementById("pi")
 let ps = document.getElementById("ps")
@@ -20,7 +20,15 @@ let timewid = document.getElementById("timewid")
 let usershape = document.getElementById("usershape");
 let index7 = document.getElementsByClassName("index7")
 let userhovercheck = document.getElementById("userhovercheck");
-let index8 = document.getElementsByClassName("index8");
+let toolhovercheck = document.getElementById("toolhovercheck");
+let toolshape = document.getElementById("toolshape");
+let index10 = document.getElementsByClassName("index10")
+let tooldiv = document.getElementById("tooldiv");
+
+let index9 = document.getElementsByClassName("index9");
+
+console.log(index9.length);
+console.log(index9[0]);
 // variable.value its always shows what value it has in the variable //
 
 let currtime = document.createElement("p");
@@ -48,7 +56,9 @@ setInterval(time,1000)
 mainmain.addEventListener("mouseenter", function(){
     hovercheck.style.display="block";
     userhovercheck.style.display="block"
-    index1[0].style.left="150px";
+    toolhovercheck.style.display="block"
+    index1[0].style.left="120px";
+    index1[0].style.bottom="472px"
     index2[0].style.left="120px";
     index2[0].style.bottom="472px";
     index3[0].style.left="120px";
@@ -61,15 +71,16 @@ mainmain.addEventListener("mouseenter", function(){
     index6[0].style.bottom="312px"
     index7[0].style.bottom="472px";
     index7[0].style.left="120px"
-    index8[0].style.bottom="472px";
-    index8[0].style.left="120px"
-    
+    index9[0].style.left="150px";
+    index10[0].style.left="150px"
 })
 
 mainmain.addEventListener("mouseleave", function(){
     hovercheck.style.display="none";
     userhovercheck.style.display="none";
+    toolhovercheck.style.display="none"
     index1[0].style.left="50px";
+    index1[0].style.bottom="392px"
     index2[0].style.left="50px";
     index2[0].style.bottom="392px";
     index3[0].style.left="50px";
@@ -82,20 +93,37 @@ mainmain.addEventListener("mouseleave", function(){
     index6[0].style.bottom="392px"
     index7[0].style.bottom="392px";
     index7[0].style.left="50px";
-    index8[0].style.bottom="392px";
-    index8[0].style.left="50px";
+    index9[0].style.bottom="392px";
+    index9[0].style.left="50px";
+    index10[0].style.bottom="392px";
+    index10[0].style.left="50px";
 })
 
 userhovercheck.addEventListener("mouseenter", function(){
-    usershape.style.display="block"
-    index7[0].style.bottom="525px"
-    index7[0].style.left="165px"
+    usershape.style.display="block";
+    
+    index7[0].style.bottom="545px";
+    index7[0].style.left="125px";
+    index1[0].style.bottom="505px";
+    index1[0].style.left="195px";
+})
+
+toolhovercheck.addEventListener("mouseenter", function(){
+    toolshape.style.display="block";
+    index10[0].style.left="225px"
+})
+
+tooldiv.addEventListener("mouseleave", function(){
+    toolshape.style.display="none";
+    index10[0].style.left="150px"
 })
 
 userdiv.addEventListener("mouseleave", function(){
     usershape.style.display="none"
     index7[0].style.bottom="472px";
-    index7[0].style.left="120px"
+    index7[0].style.left="120px";
+    index1[0].style.bottom="472px";
+    index1[0].style.left="120px";
 })
 
 hovercheck.addEventListener("mouseenter", function(){
