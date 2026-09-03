@@ -5,6 +5,7 @@
 /* https://lucide.dev/icons/?search=biology */
 
 body{background-color: #E7DCF0; padding-left: 30px;}
+
 h1 {color:#6247AA; font-size: 50px; ;} /* this is for all <h1> in the code. idk how to do it for individual till now */
 a{
     text-decoration: none;
@@ -107,17 +108,36 @@ a{
     position: absolute;
     display: flex;
     flex-direction: column;
-    left: 50px;
-    top: 80px;
-    border: 2px solid #622afc;
-    width: 350px;
-    height: 100px;
+    left: 15%;
+    top: 18vh;
+    transform: translate(-50%,-50%);
+    width: 380px;
+    height: 130px;
     justify-content: center;
     text-align: center;
     border-radius: 7px;
+    border: 2px solid #ece8f8;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #230f5a;
     font-size: 20px;
+    z-index: 0;
+    backdrop-filter: blur(6px);
+}
+
+#quotesglow{
+    transform: translate(-50%,-50%);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+     left: 15%;
+    top: 18vh;
+    border: 1px solid #622afc;
+    width: 350px;
+    height: 100px;
+    justify-content: center;
+    
+    border-radius: 7px;
+    z-index: -1;
 }
 
 .index1 {
@@ -286,6 +306,62 @@ a{
     top: 3px;
 }
 
+.index7{
+    position: fixed;
+    position: fixed;
+    display:block;
+    border-radius: 100%;
+    border-style: solid;
+    border-color: transparent;
+    width: 50px; height: 50px;
+    box-shadow: 10px 8px 8px 0px rgba(0, 0, 0, 0.09), 24px 24px 10px 0px rgba(0,0,0, 0.04), -4px -4px 30px 0px rgba(255,255,255,0.4);
+    background: linear-gradient(to bottom right, #f7f3fa, #e5ddea);
+    color:#7b55e3;
+    transform: translate(0%, +50%);
+    bottom: 392px;
+    left: 50px;
+    transition: left 0.6s, bottom 0.6s;
+    z-index: 0;
+}
+
+.index7:hover{
+    border: 2px solid transparent;
+    background:linear-gradient(to bottom right, #f7f3fa, #e5ddea) padding-box,
+    linear-gradient(to bottom right, #047EF8E6, #AD2BEEE6) border-box;
+}
+
+.index7 svg{
+    position: relative;
+    top: 3px;
+}
+
+.index8{
+    position: fixed;
+    display:block;
+    border-radius: 100%;
+    border-style: solid;
+    border-color: transparent;
+    width: 50px; height: 50px;
+    box-shadow: 10px 8px 8px 0px rgba(0, 0, 0, 0.09), 24px 24px 10px 0px rgba(0,0,0, 0.04), -4px -4px 30px 0px rgba(255,255,255,0.4);
+    background: linear-gradient(to bottom right, #f7f3fa, #e5ddea);
+    color:#7b55e3;
+    transform: translate(0%, +50%);
+    bottom: 392px;
+    left: 50px;
+    transition: left 0.6s, bottom 0.6s;
+    z-index: 0;
+}
+
+.index8:hover{
+    border: 2px solid transparent;
+    background:linear-gradient(to bottom right, #f7f3fa, #e5ddea) padding-box,
+    linear-gradient(to bottom right, #047EF8E6, #AD2BEEE6) border-box;
+}
+
+.index8 svg{
+    position: relative;
+    top: 3px;
+}
 
 
 #maincat{
@@ -300,6 +376,7 @@ a{
     bottom: 392px;
     transform: translate(0%, +50%);
     z-index: 4;
+    
 }
 
 #maincat svg{
@@ -330,6 +407,20 @@ a{
     left:100px;
     z-index: 0 ;
     rotate: 60deg;
+    display: none;
+}
+
+#usershape{
+    position: fixed;
+    border: 2px solid transparent;
+    height: 220px;
+    width: 130px;
+    border-radius: 100%;
+    bottom: 386px;
+    left:105px;
+    z-index: 0 ;
+    rotate: -60deg;
+    display: none;
 }
 
 #hovercheck{
@@ -344,10 +435,19 @@ a{
     display: none;
 }
 
-
-#kkshape{
+#userhovercheck{
+    position: fixed;
+    border: 2px solid transparent;
+    height: 55px;
+    width: 55px;
+    border-radius: 100%;
+    bottom: 443px;
+    left:115px;
+    z-index: 2 ;
     display: none;
 }
+
+
 
 /* Journal */
 

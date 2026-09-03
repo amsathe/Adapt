@@ -1,5 +1,5 @@
 // pretty heave stuff tmro try thinking everything how it works. and chill u are makign site for ur own enjoyment not so much to think //
-console.log(window.innerWidth, window.innerHeight);
+console.log(window.innerWidth, window.innerHeight); 
 
 let pi = document.getElementById("pi")
 let ps = document.getElementById("ps")
@@ -17,6 +17,10 @@ let index5 = document.getElementsByClassName("index5");
 let index6 = document.getElementsByClassName("index6");
 let hovercheck = document.getElementById("hovercheck")
 let timewid = document.getElementById("timewid")
+let usershape = document.getElementById("usershape");
+let index7 = document.getElementsByClassName("index7")
+let userhovercheck = document.getElementById("userhovercheck");
+let index8 = document.getElementsByClassName("index8");
 // variable.value its always shows what value it has in the variable //
 
 let currtime = document.createElement("p");
@@ -42,7 +46,8 @@ setInterval(time,1000)
 
 
 mainmain.addEventListener("mouseenter", function(){
-    hovercheck.style.display="block"
+    hovercheck.style.display="block";
+    userhovercheck.style.display="block"
     index1[0].style.left="150px";
     index2[0].style.left="120px";
     index2[0].style.bottom="472px";
@@ -54,11 +59,16 @@ mainmain.addEventListener("mouseenter", function(){
     index5[0].style.bottom="312px"
     index6[0].style.left="120px";
     index6[0].style.bottom="312px"
+    index7[0].style.bottom="472px";
+    index7[0].style.left="120px"
+    index8[0].style.bottom="472px";
+    index8[0].style.left="120px"
     
 })
 
 mainmain.addEventListener("mouseleave", function(){
-    hovercheck.style.display="none"
+    hovercheck.style.display="none";
+    userhovercheck.style.display="none";
     index1[0].style.left="50px";
     index2[0].style.left="50px";
     index2[0].style.bottom="392px";
@@ -70,10 +80,26 @@ mainmain.addEventListener("mouseleave", function(){
     index5[0].style.bottom="392px"
     index6[0].style.left="50px";
     index6[0].style.bottom="392px"
+    index7[0].style.bottom="392px";
+    index7[0].style.left="50px";
+    index8[0].style.bottom="392px";
+    index8[0].style.left="50px";
+})
+
+userhovercheck.addEventListener("mouseenter", function(){
+    usershape.style.display="block"
+    index7[0].style.bottom="525px"
+    index7[0].style.left="165px"
+})
+
+userdiv.addEventListener("mouseleave", function(){
+    usershape.style.display="none"
+    index7[0].style.bottom="472px";
+    index7[0].style.left="120px"
 })
 
 hovercheck.addEventListener("mouseenter", function(){
-    if (index3[0].style.left==="120px" && index3[0].style.bottom==="312px"){
+    
         kkshape.style.display='block'
         index4[0].style.left="195px";
         index4[0].style.bottom="320px"
@@ -81,7 +107,7 @@ hovercheck.addEventListener("mouseenter", function(){
         index5[0].style.bottom="260px"
         index6[0].style.left="90px";
         index6[0].style.bottom="240px"
-        }    
+        
 })
 
 knowledgediv.addEventListener("mouseleave", function(){
