@@ -4,6 +4,8 @@
 /* https://www.figma.com/design/yPr7GH6FTX5xb9zWzJ2ZFk/Vision?node-id=3-3&t=zCzQuzvtJCa78DAZ-0 */
 /* https://lucide.dev/icons/?search=biology */
 
+
+/* DOUBT: in newhabit html flex worked with absolute and buttons didnt overlap but in createnewchapterdiv thingi text overlaps */
 body{background-color: #E7DCF0; padding-left: 30px;}
 
 h1 {color:#6247AA; font-size: 50px; ;} /* this is for all <h1> in the code. idk how to do it for individual till now */
@@ -154,7 +156,7 @@ a{
     bottom: 392px;
     left:50px;
     transition: left 0.6s, bottom 0.6s;
-    z-index: 1;
+    z-index: 0;
 }
 
 .index1:hover{
@@ -1117,4 +1119,217 @@ a{
     position: absolute;
     top: 170px;
 
+}
+
+
+#newbook{
+    position: absolute;
+    border-radius: 100%;
+    border:0px;
+
+    width: 50px; height: 50px;
+    box-shadow: 10px 8px 8px 0px rgba(0, 0, 0, 0.09), 24px 24px 10px 0px rgba(0,0,0, 0.04), -4px -4px 30px 0px rgba(255,255,255,0.4);
+    background: linear-gradient(to bottom right, #f7f3fa, #e5ddea);
+    color:#7b55e3;
+    transform: translate(0%, +50%);
+    font-size: 30px;
+}
+
+#newbook:hover{
+    border:2px solid transparent;
+    background:linear-gradient(to bottom right, #f7f3fa, #e5ddea) padding-box,
+    linear-gradient(to bottom right, #047EF8E6, #AD2BEEE6) border-box;
+}
+
+#newbookdiv{
+    position: absolute;
+    width:50%;
+    height: 45vh;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50vh;
+    backdrop-filter: blur(8px);
+    background: linear-gradient(to bottom right, #f0edf380, #E7DCF080);
+    border: 2px solid #efedf1;
+    display: none;
+}
+
+#newbookdivblur{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    height: 100vh;
+    width: 100%;
+    backdrop-filter: blur(4px);
+    left: 50%;
+    top: 50vh;
+    display: none;
+    z-index: 1;
+}
+
+#newbookdivintbor{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 97%;
+    height: 95%;
+    border: 2px solid #6247AA;
+    left: 50%;
+    top: 50%
+}
+
+#bookname{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 30%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    color: #6247AA;
+    
+}
+
+#newbookinput{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 60%;
+    width: 45%;
+    height: 8%;
+    border-radius: 10px;
+    border: 2px solid #8468d1;
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+}
+
+#newbookinput:focus{
+    outline: none
+}
+
+#savedbookdiv{
+    position: absolute;
+    display: flex;  
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    top: 30vh;
+    border: 0px;
+    width:90%;
+    z-index: -1;
+}
+
+#newsavedbuttonbook{
+    border: 2px solid #f5f3fb;
+    width: 15%;
+    height: 50px;
+    border-radius: 10px;
+    background: linear-gradient(to bottom right, #f1eff780, #ddd9e780);
+    backdrop-filter: blur(4px);
+    box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.09);
+    font-size: 17px;
+    color:#6247AA;
+    z-index: 0;
+}
+
+#chaptersdiv{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50vh;
+    box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.08);
+    width: 30%;
+    height: 70%;
+    border: 2px solid #f6f4fb;
+    z-index: 2;
+}
+
+#chapters{
+    position: absolute;
+    left: 5%;
+    color:#6247AA;
+    font-size: 28px;
+}
+
+#chaptermainline{
+    position: absolute;
+    top: 10%;
+    left: 3%;
+    width: 90%
+}
+
+#enterchapter{
+    position: absolute;
+    left: 5%;
+    top: 15%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 17px;
+    color:#453278
+}
+
+
+
+#enterchapterinput{
+    position: absolute;
+    top: 17.5%;
+    left: 31%;
+    border: 2px solid #f4f3f8;
+    border-radius: 10px;
+    background-color: #f7f6fa99;
+    backdrop-filter: blur(4px);
+    width: 60%;
+    height: 4%;
+    text-align: center;
+    font-size: 15px;
+    color:#34265a
+}
+
+#enterchapterinput:focus{
+    outline:none
+}
+
+#chapterpdiv{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 5%;
+    top: 27%;
+    gap: 0px;
+    width: 86%;
+    height: 55%;
+    overflow: auto;
+}
+
+#chapterback{
+    position: absolute;;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 90%;
+    border: 2px solid #f5f4f9;
+    background: linear-gradient(to bottom right, #ebe9f1, #dedbe6);
+    border-radius: 5px;
+    width: 23%;
+    height: 5%;
+    box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.09) ;
+    color:#6247AA;
+    font-size: 16px;
+}
+
+#newchapterp{
+    margin: 0px;
+    border: none;
+    border-bottom: 1px solid #545356;
+    width: 100%;
+    height: 15%;
+    background: linear-gradient(to bottom right, #e5dcec, #E7DCF0);
+    padding-left: 30px;
+    text-align: left;
+    font-family:sans-serif;
+    font-size: 14px;
+    color:#190028;
+    flex-shrink: 0;
+}
+
+#newchapterp:hover{
+    background: linear-gradient(to bottom right, #e2dae8, #E7DCF0);
+    border:2px solid #622afc
 }
