@@ -72,6 +72,84 @@ window.addEventListener("load", function(){
             chapterpdiv.appendChild(newchapterp);
             chaptersdiv.appendChild(chapterpdiv)
             a++;
+            newchapterp.addEventListener("click", function(){
+                newchapterp.disabled=true;
+                let newchapterdiv = document.createElement("div");
+                newchapterdiv.id="newchapterdiv";
+                document.body.appendChild(newchapterdiv)
+                newchapterdiv.innerHTML=`
+                <h1>${newchapterp.textContent}</h1> 
+                <hr id="mainline">
+                <a><button id="back"><i data-lucide="chevron-left"></i></button></a>
+                <div id="chaptervocabdiv">
+                    <p class="title">Vocab</p>
+                    <hr class="insidechapterline">
+                    <p class="enter">Enter Word : </p>
+                    <input class="insidechapterinput">
+                    <div class="insidechapterpdiv"></div>
+                </div>
+                
+                <div id="chapterquotesdiv">
+                    <p class="title">Quotes</p>
+                    <hr class="insidechapterline">
+                    <p class="enter">Enter Quote : </p>
+                    <input class="insidechapterinput">
+                    <div class="insidechapterpdiv"></div>
+                </div>
+                
+                <div id="chapterlearndiv">
+                    <p class="title">Learning</p>
+                    <hr class="insidechapterline">
+                    <p class="enter">Enter Learning : </p>
+                    <input class="insidechapterinput">
+                    <div class="insidechapterpdiv"></div>
+                </div>
+                `
+                // I DONT NEDE TO DO THE TRUE FALSE THINGI AS WHAT I CLIEKD IS ALREADY THER EAS IN WHILE LOOP IT TOOK THAT ITSLEF IDK HOW its cause html desont differenciate elemnts by id but if its totally direrent dom. each new button is different dom
+                lucide.createIcons();
+                console.log("before letting")
+                let back = document.getElementById("back")
+                console.log("after letting")
+                console.log(back)
+                console.log("BACK =", back);
+                console.log(back.dataTyoe)
+                back.addEventListener("click", function(){
+                    console.log("sdfdsfdsf")
+                    newchapterdiv.remove()
+                })
+                console.log("dsfsdfsdf")
+
+                let insidechapterinput = document.getElementsByClassName("insidechapterinput")
+                let insidechapterpdiv = document.getElementsByClassName("insidechapterpdiv") // for id u may not need to declate it outide inner html cause it relates id with global window but for class u DO need to
+                insidechapterinput[0].addEventListener("keydown", function(event){
+                    if(event.key==="Enter"){
+                        let insidep = document.createElement("button");
+                        insidep.id="insidep"
+                        insidep.textContent=insidechapterinput[0].value;
+                        insidechapterpdiv[0].appendChild(insidep)
+                    }
+                })
+
+                insidechapterinput[1].addEventListener("keydown", function(event){
+                    if(event.key==="Enter"){
+                        let insidep = document.createElement("button");
+                        insidep.id="insidep"
+                        insidep.textContent=insidechapterinput[1].value;
+                        insidechapterpdiv[1].appendChild(insidep)
+                    }
+                })
+
+                insidechapterinput[2].addEventListener("keydown", function(event){
+                    if(event.key==="Enter"){
+                        let insidep = document.createElement("button");
+                        insidep.id="insidep"
+                        insidep.textContent=insidechapterinput[2].value;
+                        insidechapterpdiv[2].appendChild(insidep)
+                    }
+                })
+
+
+            })
         }
 
         // savedchapterarr.splice(1,1);
@@ -96,5 +174,16 @@ window.addEventListener("load", function(){
             chaptersdiv.remove()
             newbookdivblur.style.display="none"
         })
+        
+
+        
+        // newchapterp.addEventListener("click", function(){
+        //     console.log("BUTTON LISTENER");
+        //     alert("sdfsdfsdf")
+        // })
+        // this wont work cause IT TAKES ONLY THE FIRST elemnt with id nrechapter p. to giv everyt elemnt id u need ot do it INSIDE when newchapterp is created. yes the evenlisten runs AFTER u perfom the task but he code runs already.
+        // top fix this we can put EACH p in a div of same name and as its one singel element and as it is only creatd once and yes browser knwos hich i cliked even if its in whole div. 
+        // chapterpdiv.addeventlistener() - woild work for all buttons OUTSIDE the while. 
+        
     })
 })
