@@ -1,2 +1,2 @@
-Open application by "adapt" file 
+Open application by "adapt" file .
 Password - "localarray" + ctrl 
