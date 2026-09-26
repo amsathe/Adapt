@@ -7,6 +7,12 @@
 
 /* DOUBT: in newhabit html flex worked with absolute and buttons didnt overlap but in createnewchapterdiv thingi text overlaps */
 body{background-color: #E7DCF0; padding-left: 30px;}
+body {
+    width: 998px;
+    height: 730px;
+    transform: scale(0.4);
+    transform-origin: top left;
+}
 
 h1 {color:#6247AA; font-size: 50px; ;} /* this is for all <h1> in the code. idk how to do it for individual till now */
 a{
