@@ -159,7 +159,7 @@ window.addEventListener("load", function (){
 
     
 
-pi.addEventListener("keydown", function(event){
+pi.addEventListener("input", function(){
     if(pi.value === "localarray"){
         sessionStorage.setItem("loggedin", pi.value==="localarray");
         dashboard_screen.style.display="block";
