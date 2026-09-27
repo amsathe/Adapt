@@ -1451,3 +1451,48 @@ a{
     flex-shrink: 0;
     z-index: 2;
 }
+
+
+#newhabitinputdiv{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50vh;
+    width: 60%;
+    height: 55vh;
+    border: 2px solid red;
+    display: block;
+}
+
+#newvectorhabit{
+    position: absolute;
+    right: 1px;
+    top: 1px;
+    height:0px;
+    width:0px;
+    border: 0px;
+}
+
+#newvectorhabit:focus{
+    outline:none
+}
+
+#newvectornewhabit{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 37%;
+    font-size: 30px;
+    color: #622afc;
+}
+
+#newvectornewhabitinput{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 60%;
+    width: 40%;
+    border-radius: 5px;
+    border: 2px solid #dedae9;
+    height: 30px
+}
