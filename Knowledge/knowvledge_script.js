@@ -24,7 +24,7 @@ let toolhovercheck = document.getElementById("toolhovercheck");
 let toolshape = document.getElementById("toolshape");
 let index10 = document.getElementsByClassName("index10")
 let tooldiv = document.getElementById("tooldiv");
-
+let index14 = document.getElementsByClassName("index14");
 let index9 = document.getElementsByClassName("index9");
 
 console.log(index9.length);
@@ -58,7 +58,9 @@ mainmain.addEventListener("mouseenter", function(){
     userhovercheck.style.display="block"
     toolhovercheck.style.display="block"
     index1[0].style.left="120px";
-    index1[0].style.bottom="472px"
+    index1[0].style.bottom="472px";
+    index14[0].style.left="120px";
+    index14[0].style.bottom="472px";
     index2[0].style.left="120px";
     index2[0].style.bottom="472px";
     index3[0].style.left="120px";
@@ -81,6 +83,8 @@ mainmain.addEventListener("mouseleave", function(){
     toolhovercheck.style.display="none"
     index1[0].style.left="50px";
     index1[0].style.bottom="392px"
+    index14[0].style.left="50px";
+    index14[0].style.bottom="392px"
     index2[0].style.left="50px";
     index2[0].style.bottom="392px";
     index3[0].style.left="50px";
@@ -102,10 +106,12 @@ mainmain.addEventListener("mouseleave", function(){
 userhovercheck.addEventListener("mouseenter", function(){
     usershape.style.display="block";
     
-    index7[0].style.bottom="545px";
-    index7[0].style.left="125px";
-    index1[0].style.bottom="505px";
-    index1[0].style.left="195px";
+    index7[0].style.bottom="550px";
+    index7[0].style.left="97px";
+    index1[0].style.bottom="538px";
+    index1[0].style.left="165px";
+    index14[0].style.left="200px";
+    index14[0].style.bottom="480px";
 })
 
 toolhovercheck.addEventListener("mouseenter", function(){
@@ -124,6 +130,8 @@ userdiv.addEventListener("mouseleave", function(){
     index7[0].style.left="120px";
     index1[0].style.bottom="472px";
     index1[0].style.left="120px";
+    index14[0].style.bottom="472px";
+    index14[0].style.left="120px";
 })
 
 hovercheck.addEventListener("mouseenter", function(){
