@@ -35,6 +35,23 @@ window.addEventListener("load", function(){
             partdiv.id="partdiv";
             document.body.appendChild(partdiv);
             document.body.appendChild(blurrrrr);
+            let partdivheading = document.createElement("p");
+            partdivheading.id="partdivheading";
+            let headingline = document.createElement("hr");
+            headingline.id="headingline";
+            partdiv.appendChild(partdivheading);
+            partdiv.appendChild(headingline);
+            partdivheading.textContent=savedfigoutdiv.textContent;
+            let partdivmaintext = document.createElement("textarea");
+            partdivmaintext.id="partdivmaintext";
+            partdiv.appendChild(partdivmaintext);
+            partdivmaintext.addEventListener("input", function(){
+                localStorage.setItem(savedfigoutdiv.textContent, partdivmaintext.value);
+            })
+            partdivmaintext.value=localStorage.getItem(savedfigoutdiv.textContent);
+            let partdivbackbutton = document.createElement("button");
+            partdiv.appendChild(partdivbackbutton);
+            partdivbackbutton.textContent="close";
         })
     }
     
