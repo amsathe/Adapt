@@ -52,6 +52,11 @@ window.addEventListener("load", function(){
             let partdivbackbutton = document.createElement("button");
             partdiv.appendChild(partdivbackbutton);
             partdivbackbutton.textContent="close";
+            partdivbackbutton.id="partdivbackbutton";
+            partdivbackbutton.addEventListener("click", function(){
+                partdiv.style.display="none";
+                blurrrrr.style.display="none"
+            })
         })
     }
     
