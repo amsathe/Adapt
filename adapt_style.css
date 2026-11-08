@@ -784,15 +784,16 @@
         box-shadow: 10px 8px 8px 0px rgba(0, 0, 0, 0.09), 24px 24px 10px 0px rgba(0,0,0, 0.04), -4px -4px 30px 0px rgba(255,255,255,0.4);
         background: linear-gradient(to bottom right, #f7f3fa, #e5ddea);
         color:#7b55e3;
-        transform: translate(0%, +50%);
-        top: 30px;
+        top: 60px;
         left: 1430px;
+        transition: transform 0.3s;
     }
 
     #back:hover{
         border: 2px solid transparent;
         background:linear-gradient(to bottom right, #f7f3fa, #e5ddea) padding-box,
         linear-gradient(to bottom right, #047EF8E6, #AD2BEEE6) border-box;
+        transform: scale(1.16);
     }
 
     #back svg{
@@ -1658,4 +1659,9 @@
     border-radius: 10px;
     background: linear-gradient(to bottom right, #ebe2f3, #E7DCF0)padding-box, linear-gradient(to bottom right, #1559ed, #8528cd) border-box;
     box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.14);
+    transition: transform 0.2s;
+}
+
+#partdivbackbutton:hover{
+    transform: scale(1.1);
 }
