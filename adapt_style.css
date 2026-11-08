@@ -1638,7 +1638,7 @@
 
 #partdivmaintext{
     position: relative;
-    width: 70%;
+    width: 95%;
     outline: none;
     border: none;
     background-color: #E7DCF0 ;
@@ -1651,7 +1651,7 @@
 #partdivbackbutton{
     position: absolute;
     top: 7%;
-    right: 30%;
+    right: 5%;
     width: 5%;
     height: 5%;
     border: 2px solid transparent;

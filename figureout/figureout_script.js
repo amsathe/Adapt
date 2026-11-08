@@ -57,6 +57,11 @@ window.addEventListener("load", function(){
                 partdiv.style.display="none";
                 blurrrrr.style.display="none"
             })
+            partdivmaintext.addEventListener("keydown", function(event){
+                if (event.ctrlKey && event.key=="b"){
+                    partdivmaintext.style.fontWeight="bold";
+                }
+            })
         })
     }
     
